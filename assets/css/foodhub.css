@@ -43,7 +43,7 @@
    */
 
   --px: 30px;
-  --py: 60px;
+  --py: 0px;
 
   /**
    * others 
@@ -144,6 +144,12 @@ html {
   letter-spacing: 0.5px;
 }
 
+.section-texts {
+  color: var(--rhythm);
+  font-size: var(--fs-4);
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
 
 
 
@@ -870,4 +876,45 @@ footer {
   color: var(--rhythm);
   text-align: center;
   letter-spacing: 0.5px;
+}
+
+
+/*-----------------------------------*\ 
+  #FOOTER
+\*-----------------------------------*/
+
+
+.order-form {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+.order-form h2 {
+  text-align: center;
+}
+.order-form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+.order-form input,
+.order-form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.order-form button {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.order-form button:hover {
+  background-color: #28a745;
 }

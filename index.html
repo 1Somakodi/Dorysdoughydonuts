@@ -101,7 +101,7 @@
           <h1 class="main-heading">Handmade, From Scratch!</h1>
 
           <p class="home-text">
-            Welcome to Dory's Doughy Donuts <br> Where tradition meets taste, and every bite tells a story&#128512;&#128512;&#128512;.
+            Welcome to Dory's Doughy Donuts <br> Where tradition meets taste, and every bite tells a story&#128512;&#128512;&#128512;.<br>
             We take great pride in crafting donuts that are familiar yet exciting, offering you a taste experience that is both comforting and new.
           </p>
 
@@ -110,6 +110,11 @@
             <button class="btn btn-primary btn-icon">
               <img src="./assets/images/menu.svg" alt="menu icon">
               <a href="#menu" class="nav-link">Our menu</a>
+            </button>
+
+            <button class="btn btn-primary btn-icon">
+              <img src="./assets/images/menu.svg" alt="menu icon">
+              <a href="#testimonials" class="nav-link">Make to Order</a>
             </button>
           </div>
 
@@ -273,17 +278,17 @@
 
 
 
-
-
       <!--
         - #PRODUCT SECTION
       -->
+
+
 
       <section class="product" id="menu">
 
         <h2 class="section-title">Our Menu</h2>
 
-        <p class="section-text">
+        <p class="section-texts">
           Please note: Our donut flavors generally change every two to three weeks!<br>
           Minimum order is 4 pieces. 
         </p>
@@ -829,37 +834,86 @@
           <img src="./assets/images/menu.svg" alt="menu icon">
           <a href="#testimonials" class="nav-link">Click to Order</a>
         </button>
-
       </section>
+
+
+
 
       <!--
         - #ORDER SECTION
       -->
 
+
+
       <section class="product" id="menu">
 
-        <h2 class="section-title">Place an Order</h2>
+        <h2 class="section-title" style="text-align: center">Make an Order</h2>
 
-        <p class="section-text">
-          View our past works.
+        <p class="section-texts">
+          Interested in making an order for donuts or maandazi? Please fill out the form below and we’ll be in touch shortly! <br>
         </p>
 
-        
+        <p class="section-texts">
+          Donut pre-orders are limited to the flavors on our current menu. Minimum order of 4 donuts. Pick up at our shop between Thursday and Sunday, during open hours.
+        </p>
 
-        <button class="btn btn-primary btn-icon">
-          <img src="./assets/images/menu.svg" alt="menu icon">
-          <a href="#testimonials" class="nav-link">Click to Order</a>
-        </button>
-
+        <div class="order-form">
+          <h2 class="section-title">Order Form</h2>
+          <form action="/submit-order" method="POST">
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+  
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+  
+              <label for="item">Select Item:</label>
+              <select id="item" name="item" required>
+                  <option value="">-- Select an Item --</option>
+                  <option value="doughnut">Doughnut</option>
+                  <option value="maandazi">Maandazi</option>
+              </select>
+  
+              <label for="glazing">Select Glazing:</label>
+              <select id="glazing" name="glazing" required>
+                  <option value="">-- Select Glazing --</option>
+                  <option value="none">None</option>
+                  <option value="sugar">Sugar</option>
+                  <option value="honey">Honey</option>
+                  <option value="chocolate">Chocolate</option>
+              </select>
+  
+              <label for="topping">Select Topping:</label>
+              <select id="topping" name="topping" required>
+                  <option value="">-- Select Topping --</option>
+                  <option value="none">None</option>
+                  <option value="sprinkles">Sprinkles</option>
+                  <option value="nuts">Nuts</option>
+                  <option value="caramel">Caramel</option>
+              </select>
+  
+              <label for="delivery">Select Delivery Option:</label>
+              <select id="delivery" name="delivery" required>
+                  <option value="">-- Select Delivery Option --</option>
+                  <option value="pickup">Pick-up</option>
+                  <option value="home_delivery">Home Delivery</option>
+              </select>
+  
+              <button class="btn btn-primary btn-icon">
+                <img src="./assets/images/menu.svg" alt="menu icon">
+                <a href="#testimonials" class="nav-link">Click to Order</a>
+              </button>
+          </form>
+        </div>
       </section>
-
-
 
 
 
       <!--
         - #FAQS SECTION
       -->
+
+
+
 
       <section class="testimonials" id="testimonials">
 
