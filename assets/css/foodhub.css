@@ -26,6 +26,7 @@
   --cultured: hsl(220, 13%, 95%);
   --saffron: hsl(45, 91%, 58%);
   --rhythm: hsl(240, 9%, 51%);
+  --rhythms: hsl(0, 0%, 4%);
   --white: hsl(0, 0%, 100%);
 
   /**
@@ -42,7 +43,7 @@
    * spacing 
    */
 
-  --px: 30px;
+  --px: 0px;
   --py: 0px;
 
   /**
@@ -145,6 +146,7 @@ html {
 }
 
 .section-texts {
+  max-width: 720px;
   color: var(--rhythm);
   font-size: var(--fs-4);
   line-height: 1.4;
@@ -675,6 +677,8 @@ html {
 
 .product .section-text { margin-bottom: 60px; }
 
+.product .section-texts { margin-bottom: 60px; }
+
 .products-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -873,7 +877,7 @@ footer {
 
 .copyright {
   font-size: 12px;
-  color: var(--rhythm);
+  color: var(--rhythms);
   text-align: center;
   letter-spacing: 0.5px;
 }
