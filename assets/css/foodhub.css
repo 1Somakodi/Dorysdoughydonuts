@@ -146,7 +146,7 @@ html {
 }
 
 .section-texts {
-  max-width: 720px;
+  max-width: 1200px;
   color: var(--rhythm);
   font-size: var(--fs-4);
   line-height: 1.4;
@@ -869,14 +869,14 @@ footer {
 
 .social-link ion-icon {
   color: var(--cultured);
-  font-size: 15px;
+  font-size: 40px;
   transition: 0.25s ease;
 }
 
 .social-link ion-icon:hover { color: var(--saffron); }
 
 .copyright {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--rhythms);
   text-align: center;
   letter-spacing: 0.5px;
