@@ -135,6 +135,7 @@ html {
   color: var(--space-cadet);
   font-size: var(--fs-2);
   font-weight: 600;
+  margin-top: 50px;
 }
 
 .section-text {
@@ -544,7 +545,9 @@ html {
   display: grid;
   grid-template-columns: 1fr;
   gap: 60px;
+  margin-top: 30px; /* Adjust the value as needed */
 }
+
 
 .about-left { position: relative; }
 
@@ -784,6 +787,8 @@ html {
 
 .testimonials { padding: var(--py) var(--px) 120px; }
 
+.testimonials .section-title { margin-top: 50px; }
+
 .testimonials .section-title { margin-bottom: 15px; }
 
 .testimonials .section-text { margin-bottom: 50px; }
@@ -886,6 +891,7 @@ footer {
 /*-----------------------------------*\ 
   #FOOTER
 \*-----------------------------------*/
+
 
 
 .order-form {
