@@ -137,6 +137,7 @@ html {
   padding-top: 50px;
 }
 
+
 .section-text {
   max-width: 320px;
   color: var(--rhythm);
@@ -147,6 +148,7 @@ html {
 
 .section-texts {
   max-width: 1200px;
+  padding-bottom: 20px;
   color: var(--rhythm);
   font-size: var(--fs-6);
   line-height: 1.4;
