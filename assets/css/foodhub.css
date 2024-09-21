@@ -218,6 +218,7 @@ html {
 }
 
 .navbar-nav.active {
+  display: block;
   transform: translateY(0);
   opacity: 1;
   visibility: visible;
@@ -254,6 +255,9 @@ html {
   transition: 0.25s ease;
 }
 
+#menu-toggle:checked + .menu-toggle-btn + .navbar-nav {
+  display: block;
+}
 .menu-toggle-btn.active .one { transform: translateY(7px) rotate(-45deg); }
 
 .menu-toggle-btn.active .two { transform: rotate(45deg); }

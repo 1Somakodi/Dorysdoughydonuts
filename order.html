@@ -75,7 +75,6 @@
           </ul>
 
           <div class="navbar-btn-group">
-
             <button class="menu-toggle-btn">
               <span class="line one"></span>
               <span class="line two"></span>
@@ -83,13 +82,17 @@
             </button>
 
           </div>
-
         </div>
-
       </nav>
 
-    </header>
+      <div class="cart-box">
+        <div class="cart-btn-group">
+          <button class="btn btn-secondary">View order</button>
+          <button class="btn btn-primary">Checkout</button>
+        </div>
+      </div>
 
+    </header>
     <main>
 
 
@@ -124,17 +127,28 @@
               <label for="item">Select Item:</label>
               <select id="item" name="item" required>
                   <option value="">-- Select an Item --</option>
-                  <option value="doughnut">Doughnut</option>
-                  <option value="maandazi">Maandazi</option>
+                  <option value="donut">Donut</option>
+                  <option value="minidonut">Mini Donut</option>
+                  <option value="maandazi">Beignets</option>
+                  <option value="maandazi">Sesame Beignets</option>
+                  <option value="Brownie">Brownie</option>
               </select>
   
-              <label for="glazing">Select Glazing:</label>
+              <label for="glazing">Select Donut Glazing:</label>
               <select id="glazing" name="glazing" required>
                   <option value="">-- Select Glazing --</option>
                   <option value="none">None</option>
                   <option value="sugar">Sugar</option>
-                  <option value="honey">Honey</option>
+                  <option value="cinnamon">Honey</option>
                   <option value="chocolate">Chocolate</option>
+              </select>
+              <label for="topping">Select Cream Filling:</label>
+              <select id="topping" name="topping" required>
+                  <option value="">-- Select Cream Filling --</option>
+                  <option value="none">None</option>
+                  <option value="sprinkles">white chocolates</option>
+                  <option value="nuts">cookies & cream</option>
+                  <option value="caramel">sweet strawberry</option>
               </select>
   
               <label for="topping">Select Topping:</label>
@@ -143,7 +157,8 @@
                   <option value="none">None</option>
                   <option value="sprinkles">Sprinkles</option>
                   <option value="nuts">Nuts</option>
-                  <option value="caramel">Caramel</option>
+                  <option value="caramel">biscuit</option>
+                  <option value="fruit">fruit</option>
               </select>
   
               <label for="delivery">Select Delivery Option:</label>
@@ -151,6 +166,13 @@
                   <option value="">-- Select Delivery Option --</option>
                   <option value="pickup">Pick-up</option>
                   <option value="home_delivery">Home Delivery</option>
+              </select>
+
+              <label for="delivery">Order Payment</label>
+              <select id="delivery" name="delivery" required>
+                  <option value="">-- Select Payment Option --</option>
+                  <option value="pickup">Pay Now</option>
+                  <option value="home_delivery">Pay Later</option>
               </select>
   
               <button class="btn btn-primary btn-icon">

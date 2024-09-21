@@ -31,6 +31,7 @@ navToggleBtn.addEventListener('click', function () {
 
 });
 
+
 // add event on cart-toggle-btn
 cartToggleBtn.addEventListener('click', function () {
 
