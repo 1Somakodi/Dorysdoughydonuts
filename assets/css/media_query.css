@@ -39,7 +39,7 @@
    */
 
   .home-text {
-    max-width: 320px;
+    max-width: 500px;
     margin-inline: auto;
   }
 
@@ -147,8 +147,6 @@
   /**
    * HEADER 
    */
-
-  .cart-item .product-price { font-size: 18px; }
 
 
 
@@ -261,19 +259,6 @@
   }
 
   .menu-toggle-btn { display: none; }
-
-  .cart-box {
-    max-width: 450px;
-    height: calc(100vh - 121px);
-  }
-
-  .cart-box-ul {
-    padding: 60px;
-    padding-bottom: 150px;
-  }
-
-  .cart-btn-group { padding: 30px 60px; }
-
 
 
   /**

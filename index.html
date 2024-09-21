@@ -76,11 +76,12 @@
 
           <div class="navbar-btn-group">
 
-            <button class="menu-toggle-btn">
+            <input type="checkbox" id="menu-toggle" style="display: none;">
+            <label for="menu-toggle" class="menu-toggle-btn">
               <span class="line one"></span>
               <span class="line two"></span>
               <span class="line three"></span>
-            </button>
+            </label>
 
           </div>
 
@@ -132,16 +133,6 @@
           <img src="./assets/images/Donut6.jpeg" alt="food image" class="food-img food-1" width="200" loading="lazy">
           <img src="./assets/images/Gallery12.jpg" alt="food image" class="food-img food-2" width="200" loading="lazy">
           <img src="./assets/images/Donut15 (1).jpg" alt="food image" class="food-img food-3" width="200" loading="lazy">
-
-          <img src="./assets/images/dialog-1.svg" alt="dialog" class="dialog dialog-1" width="230">
-          <img src="./assets/images/dialog-2.svg" alt="dialog" class="dialog dialog-2" width="230">
-
-          <img src="./assets/images/circle.svg" alt="circle shape" class="shape shape-1" width="25">
-          <img src="./assets/images/circle.svg" alt="circle shape" class="shape shape-2" width="15">
-          <img src="./assets/images/circle.svg" alt="circle shape" class="shape shape-3" width="30">
-          <img src="./assets/images/ring.svg" alt="ring shape" class="shape shape-4" width="60">
-          <img src="./assets/images/ring.svg" alt="ring shape" class="shape shape-5" width="40">
-
         </div>
 
       </section>
@@ -282,6 +273,16 @@
     - custom js link
   -->
   <script src="./assets/js/foodhub.js"></script>
+
+  <script>
+    const menuToggleBtn = document.querySelector('.menu-toggle-btn');
+    const navbarNav = document.querySelector('.navbar-nav');
+  
+    menuToggleBtn.addEventListener('click', () => {
+      menuToggleBtn.classList.toggle('active');
+      navbarNav.classList.toggle('active');
+    });
+  </script>
 
   <!--
     - ionicon link
