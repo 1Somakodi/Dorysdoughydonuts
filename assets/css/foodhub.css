@@ -416,7 +416,7 @@ html {
 \*-----------------------------------*/
 
 .about {
-  padding: var(--py) var(--px);
+  padding-top: 50px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 60px;
@@ -499,11 +499,11 @@ html {
   animation: moveUp 3s ease-in-out infinite;
 }
 
-.about-right .section-title { margin-bottom: 30px; }
+.about-right .section-title { margin-bottom: 10px; }
 
 .about-right p {
   max-width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 
@@ -764,7 +764,7 @@ footer {
 
 
 /*-----------------------------------*\ 
-  #FOOTER
+  #ORDER FORM
 \*-----------------------------------*/
 
 
