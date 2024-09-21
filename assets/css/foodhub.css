@@ -3,11 +3,8 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2022 @codewithsadee 
+ * copyright 2024 
  */
-
-
-
 
 
 /*-----------------------------------*\ 
@@ -38,6 +35,7 @@
   --fs-3: 18px;
   --fs-4: 15px;
   --fs-5: 14px;
+  --fs-6: 17px;
 
   /**
    * spacing 
@@ -141,7 +139,7 @@ html {
 .section-text {
   max-width: 320px;
   color: var(--rhythm);
-  font-size: var(--fs-4);
+  font-size: var(--fs-6);
   line-height: 1.4;
   letter-spacing: 0.5px;
 }
@@ -149,7 +147,7 @@ html {
 .section-texts {
   max-width: 1200px;
   color: var(--rhythm);
-  font-size: var(--fs-4);
+  font-size: var(--fs-6);
   line-height: 1.4;
   letter-spacing: 0.5px;
 }
@@ -422,6 +420,7 @@ html {
 
 .home-text {
   color: var(--rhythm);
+  font-size: var(--fs-6);
   margin-bottom: 30px;
   line-height: 1.6;
 }
@@ -662,7 +661,7 @@ html {
 
 .service-card .card-text {
   color: var(--rhythm);
-  font-size: var(--fs-4);
+  font-size: var(--fs-6);
   line-height: 1.5;
 }
 
@@ -680,7 +679,7 @@ html {
 
 .product .section-text { margin-bottom: 60px; }
 
-.product .section-texts { margin-bottom: 60px; }
+.product .section-texts { margin-bottom: 20px; }
 
 .products-grid {
   display: grid;
@@ -815,7 +814,7 @@ html {
 .testimonials-rating ion-icon { color: var(--saffron); }
 
 .testimonials-text {
-  font-size: var(--fs-4);
+  font-size: var(--fs-6);
   color: var(--rhythm);
   line-height: 1.4;
   letter-spacing: 0.5px;
