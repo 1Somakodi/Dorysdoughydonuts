@@ -134,6 +134,7 @@ html {
   font-size: var(--fs-2);
   font-weight: 600;
   margin-top: 50px;
+  padding-top: 50px;
 }
 
 .section-text {
