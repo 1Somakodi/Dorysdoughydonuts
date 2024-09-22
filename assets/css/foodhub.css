@@ -133,8 +133,8 @@ html {
   color: var(--space-cadet);
   font-size: var(--fs-2);
   font-weight: 600;
-  margin-top: 50px;
-  padding-top: 50px;
+  margin-top: 30px;
+  padding-top: 10px;
 }
 
 .section-titles {
@@ -142,6 +142,24 @@ html {
   max-width: 1220px;
   color: var(--space-cadet);
   font-size: var(--fs-2);
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+.card-title {
+  text-align: center;
+  max-width: 1220px;
+  color: var(--rhythm);
+  font-size: var(--fs-2);
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.section-titless {
+  text-align: center;
+  max-width: 1220px;
+  color: var(--space-cadet);
+  font-size: var(--fs-1);
   font-weight: 600;
   padding-top: 10px;
 }
@@ -170,7 +188,24 @@ html {
   letter-spacing: 0.5px;
 }
 
+.section-textss {
+  max-width: 1200px;
+  padding-bottom: 20px;
+  color: var(--space-cadet);
+  font-size: var(--fs-2);
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
 
+.faq-text {
+  max-width: 1200px;
+  padding-bottom: 20px;
+  color: var(--rhythm);
+  font-size: var(--fs-6);
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
 
 
 /*-----------------------------------*\ 
