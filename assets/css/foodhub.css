@@ -198,6 +198,16 @@ html {
   letter-spacing: 0.5px;
 }
 
+.section-textsss {
+  max-width: 1200px;
+  padding-bottom: 20px;
+  color: var(--space-cadet);
+  font-size: var(--fs-3);
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+
 .faq-text {
   max-width: 1200px;
   padding-bottom: 20px;
@@ -277,7 +287,7 @@ html {
 
 .nav-link {
   color: var(--space-cadet);
-  font-size: var(--fs-5);
+  font-size: var(--fs-3);
   transition: 0.25s ease;
 }
 
