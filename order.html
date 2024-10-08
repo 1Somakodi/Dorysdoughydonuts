@@ -111,11 +111,6 @@
 
         <h2 class="section-title">Make an Order</h2>
 
-        <p class="section-texts">
-          Whether you need donuts for home or to treat your co-workers at the office, we make it easy to order fresh donuts! Fill in the form.<br>
-          You can Pick up the order or have it delivery to you at a small fee depending on distance. We deliver to locations within 5 miles radius of Ray City.
-        </p>
-
         <div class="order-form">
           <h2 class="section-title">Your Order Details</h2>
           <form action="/submit-order" method="POST">
@@ -127,7 +122,7 @@
   
               <label for="item">Select Item:</label>
               <select id="item" name="item" required>
-                  <option value="">-- Select an Item --</option>
+                  <option value="">-- Select Item --</option>
                   <option value="donut">Donut</option>
                   <option value="minidonut">Mini Donut</option>
                   <option value="maandazi">Donut Holes</option>
@@ -136,7 +131,7 @@
                   <option value="Brownie">Brownie</option>
               </select>
   
-              <label for="glazing">Select Donut Glazing:</label>
+              <label for="glazing">Select Glazing:</label>
               <select id="glazing" name="glazing" required>
                   <option value="">-- Select Glazing --</option>
                   <option value="none">None</option>
