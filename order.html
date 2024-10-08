@@ -113,7 +113,7 @@
 
         <p class="section-texts">
           Whether you need donuts for home or to treat your co-workers at the office, we make it easy to order fresh donuts! Fill in the form.<br>
-          You can Pick up your Order or have it Delivered at a small fee depending on distance within Voldosta.
+          You can Pick up the order or have it delivery to you at a small fee depending on distance. We deliver to locations within 5 miles radius of Ray City.
         </p>
 
         <div class="order-form">
@@ -130,8 +130,9 @@
                   <option value="">-- Select an Item --</option>
                   <option value="donut">Donut</option>
                   <option value="minidonut">Mini Donut</option>
+                  <option value="maandazi">Donut Holes</option>
                   <option value="maandazi">Beignets</option>
-                  <option value="maandazi">Sesame Beignets</option>
+                  <option value="maandazi">Blueberries Muffins</option>
                   <option value="Brownie">Brownie</option>
               </select>
   
@@ -139,17 +140,18 @@
               <select id="glazing" name="glazing" required>
                   <option value="">-- Select Glazing --</option>
                   <option value="none">None</option>
-                  <option value="sugar">Sugar</option>
-                  <option value="cinnamon">Honey</option>
-                  <option value="chocolate">Chocolate</option>
+                  <option value="sugar">Cinnamon Sugar Glaze</option>
+                  <option value="cinnamon">Classic Vanilla Glaze</option>
+                  <option value="chocolate">Chocolate Glaze</option>
               </select>
-              <label for="topping">Select Cream Filling:</label>
+              <label for="topping">Select Filling:</label>
               <select id="topping" name="topping" required>
-                  <option value="">-- Select Cream Filling --</option>
+                  <option value="">-- Select Filling --</option>
                   <option value="none">None</option>
-                  <option value="sprinkles">white chocolates</option>
-                  <option value="nuts">cookies & cream</option>
-                  <option value="caramel">strawberry</option>
+                  <option value="sprinkles">Chocolate Frosting</option>
+                  <option value="nuts">Oreo Frosting</option>
+                  <option value="caramel">Peanut Butter Frosting</option>
+                  <option value="caramel">Biscoff Frosting</option>
               </select>
   
               <label for="topping">Select Topping:</label>
@@ -158,21 +160,27 @@
                   <option value="none">None</option>
                   <option value="sprinkles">Sprinkles</option>
                   <option value="nuts">Nuts</option>
-                  <option value="caramel">biscuit</option>
-                  <option value="fruit">fruit</option>
+                  <option value="caramel">Biscoff</option>
+                  <option value="fruit">Chocolate Shavings</option>
+                  <option value="fruit">Coconut Flakess</option>
+                  <option value="fruit">Oreo</option>
               </select>
   
               <label for="delivery">Select Delivery Option:</label>
               <select id="delivery" name="delivery" required>
                   <option value="">-- Select Delivery Option --</option>
-                  <option value="pickup">Pick-up</option>
-                  <option value="home_delivery">Home Delivery</option>
+                  <option value="pickup">Self Pick-up</option>
+                  <option value="home_delivery">Delivery at a Fee</option>
               </select>
 
               <label for="delivery">Order Payment</label>
               <select id="delivery" name="delivery" required>
                   <option value="">-- Select Payment Option --</option>
-                  <option value="pickup">Pay Now</option>
+                  <option value="pickup">Card</option>
+                  <option value="pickup">CashApp</option>
+                  <option value="pickup">Zelle</option>
+                  <option value="pickup">Venmo</option>
+                  <option value="pickup">Pay on Delivery/Pick Up</option>
               </select>
   
               <button class="btn btn-primary btn-icon">
