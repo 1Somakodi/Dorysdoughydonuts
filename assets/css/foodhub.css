@@ -53,9 +53,6 @@
 }
 
 
-
-
-
 /*-----------------------------------*\ 
   #RESET
 \*-----------------------------------*/
@@ -182,14 +179,6 @@ html {
 .section-texts {
   max-width: 1200px;
   padding-bottom: 20px;
-  color: var(--rhythm);
-  font-size: var(--fs-6);
-  line-height: 1.4;
-  letter-spacing: 0.5px;
-}
-.section-textssss {
-  max-width: 1200px;
-  padding-bottom: 0px;
   color: var(--rhythm);
   font-size: var(--fs-6);
   line-height: 1.4;
@@ -480,6 +469,29 @@ html {
 }
 
 
+.carousel {
+    max-width: 100%;
+    margin: auto;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures images cover the area without stretching */
+    animation: scaleUp 4s ease-in-out infinite;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text visibility */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for controls */
+}
 
 
 
