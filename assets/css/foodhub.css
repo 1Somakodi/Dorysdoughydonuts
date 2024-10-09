@@ -910,3 +910,38 @@ footer {
     background-color: #333;
   }
 }
+
+/* Base styles for the carousel */
+.carousel {
+  width: 100%; /* Default to full width */
+  margin: auto;
+}
+
+/* Styles for larger screens */
+@media (min-width: 768px) {
+  #carousel-section {
+      width: 50%; /* 50% width on tablet and larger screens */
+      margin: auto; /* Center the carousel */
+  }
+}
+
+/* Ensure carousel images cover the area without stretching */
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures images cover the area without stretching */
+}
+
+/* Additional carousel styles (if needed) */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text visibility */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for controls */
+}
+
