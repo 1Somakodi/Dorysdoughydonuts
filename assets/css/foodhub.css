@@ -744,9 +744,9 @@ html {
   #TESTIMONIALS SECTION
 \*-----------------------------------*/
 
-.testimonials { padding: var(--py) var(--px) 120px; }
+.testimonials { padding: var(--py) var(--px) 20px; }
 
-.testimonials .section-title { margin-top: 50px; }
+.testimonials .section-title { margin-top: 10px; }
 
 .testimonials .section-title { margin-bottom: 15px; }
 
