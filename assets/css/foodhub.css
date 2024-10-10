@@ -936,7 +936,7 @@ html {
 
 .footer .box-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Now we have 4 columns */
+  grid-template-columns: repeat(3, 1fr); /* Now we have 4 columns */
   gap: 10rem;
 }
 
