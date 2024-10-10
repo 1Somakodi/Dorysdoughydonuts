@@ -991,7 +991,6 @@ html {
   transform: scale(1.1); /* Optional: slightly increase size on hover */
 }
 
-
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   .footer .box-container {
