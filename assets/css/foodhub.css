@@ -469,32 +469,6 @@ html {
 }
 
 
-.carousel {
-    max-width: 100%;
-    margin: auto;
-}
-
-.carousel-inner img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* Ensures images cover the area without stretching */
-    animation: scaleUp 4s ease-in-out infinite;
-}
-
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text visibility */
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for controls */
-}
-
-
-
 /*-----------------------------------*\ 
   #ABOUT
 \*-----------------------------------*/
@@ -893,6 +867,38 @@ html {
 }
 
 /* Base styles for the carousel */
+
+.carousel {
+  max-width: 100%;
+  margin: auto;
+  height: 90vh; /* Set the height of the carousel to 30% of the viewport height */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.carousel-inner {
+  height: 100%; /* Ensure inner content takes full height of the carousel */
+}
+
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images cover the area without stretching */
+    animation: scaleUp 4s ease-in-out infinite;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text visibility */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for controls */
+}
+
 .carousel {
   width: 100%; /* Default to full width */
   margin: auto;
@@ -909,8 +915,9 @@ html {
 /* Ensure carousel images cover the area without stretching */
 .carousel-inner img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover; /* Ensures images cover the area without stretching */
+  animation: scaleUp 4s ease-in-out infinite;
 }
 
 /* Additional carousel styles (if needed) */
