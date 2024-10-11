@@ -1000,3 +1000,64 @@ html {
 }
 
 /* end */
+
+/* Event titles container */
+.event-titles {
+  margin: 20px 0;
+  font-size: 2rem;
+  font-family: 'Rubik', sans-serif;
+  padding-top: 80px; /* Added top padding */
+}
+
+/* General styling for each span */
+.event-titles span {
+  margin: 0 10px;
+  font-weight: bold;
+  display: inline-block;
+  opacity: 0; /* Initial state for animation */
+  animation-duration: 2s; /* Animation duration */
+  animation-fill-mode: forwards; /* Stay in final state after animation */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Individual styling and animation for each event */
+.birthday {
+  color: #FF5733; /* Bright red-orange */
+  font-style: italic;
+  animation-name: fadeIn; /* Fades in and slides up */
+  animation-delay: 0.5s; /* Slight delay for staggered effect */
+}
+
+.office-party {
+  color: #007BFF; /* Blue */
+  text-transform: uppercase;
+  animation-name: fadeIn; /* Fade-in and slide-up effect */
+  animation-delay: 1s;
+}
+
+.wedding {
+  color: #FFC0CB; /* Pink */
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  animation-name: fadeIn; /* Fade-in and slide-up effect */
+  animation-delay: 1.5s;
+}
+
+.graduation {
+  color: #28A745; /* Green */
+  text-decoration: underline;
+  animation-name: fadeIn; /* Fade-in and slide-up effect */
+  animation-delay: 2s;
+}
+
+.others {
+  color: #6C757D; /* Gray */
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  animation-name: fadeIn; /* Fade-in and slide-up effect */
+  animation-delay: 2.5s;
+}
