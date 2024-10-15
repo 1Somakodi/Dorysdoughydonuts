@@ -119,7 +119,7 @@
 
         <div class="order-form">
           <h2 class="section-title">Your Order Details</h2>
-          <form action="/submit-order" method="POST">
+          <form id="order-form" action="/submit-order" method="POST">
               <label for="name">Full Name:</label>
               <input type="text" id="name" name="name" placeholder="Enter your full name" required>
   
@@ -138,8 +138,8 @@
               </select>
 
               <label for="item">Select Quantity:</label>
-              <select id="item" name="item" required>
-                  <option value="">-- Select Item --</option>
+              <select id="quantity" name="quantity" required>
+                  <option value="">-- Select Quantity --</option>
                   <option value="4">4 pieces</option>
                   <option value="6">6 pieces</option>
                   <option value="8">8 pieces</option>
@@ -156,8 +156,8 @@
                   <option value="cinnamon">Classic Vanilla Glaze</option>
                   <option value="chocolate">Chocolate Glaze</option>
               </select>
-              <label for="topping">Select Filling:</label>
-              <select id="topping" name="topping" required>
+              <label for="filling">Select Filling:</label>
+              <select id="filling" name="filling" required>
                   <option value="">-- Select Filling --</option>
                   <option value="none">None</option>
                   <option value="sprinkles">Chocolate Frosting</option>
@@ -185,20 +185,21 @@
                   <option value="home_delivery">Delivery at a Fee</option>
               </select>
 
-              <label for="delivery">Order Payment</label>
-              <select id="delivery" name="delivery" required>
-                  <option value="">-- Select Payment Option --</option>
-                  <option value="pickup">Card</option>
-                  <option value="pickup">CashApp</option>
-                  <option value="pickup">Zelle</option>
-                  <option value="pickup">Venmo</option>
-                  <option value="pickup">Pay on Delivery/Pick Up</option>
+              <label for="payment">Order Payment</label>
+              <select id="payment" name="payment" required>
+                <option value="">-- Select Payment Option --</option>
+                <option value="card">Card</option>
+                <option value="cashapp">CashApp</option>
+                <option value="zelle">Zelle</option>
+                <option value="venmo">Venmo</option>
+                <option value="pay_on_delivery">Pay on Delivery/Pick Up</option>
               </select>
+              
   
-              <button class="btn btn-primary btn-icon">
+              <button type="submit" class="btn btn-primary btn-icon">
                 <img src="./assets/images/menu.svg" alt="menu icon">
-                <a href="order.html" class="nav-link">Click to Order</a>
-              </button>
+                Click to Order
+              </button>              
           </form>
         </div>
       </section>
@@ -270,6 +271,33 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('order-form').addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent page reload
+
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+
+    fetch('https://script.google.com/macros/s/AKfycbzpp9lWgae6SXSFZVQd-IW4W8XoVVcSLBiH1r8l0tqPCOcZG_Fvg8m3FF2_nrmFyYNT/exec', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    })
+      .then(response => response.json())
+      .then(data => {
+        if (data.status === 'success') {
+          alert('Order submitted successfully!');
+          e.target.reset();
+        } else {
+          alert('Something went wrong. Please try again.');
+        }
+      })
+      .catch(error => console.error('Error:', error));
+  });
+});
+  </script>
+  
 
 </body>
 
