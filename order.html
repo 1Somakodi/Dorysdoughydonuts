@@ -114,95 +114,94 @@
 
 
       <section class="product" id="order">
-
         <h2 class="section-titless" style="padding-top: 100px;">Make an Order</h2>
-
+    
         <div class="order-form">
-          <h2 class="section-title">Your Order Details</h2>
-          <form id="order-form" action="/submit-order" method="POST">
-              <label for="name">Full Name:</label>
-              <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-  
-              <label for="phone">Phone Number:</label>
-              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-  
-              <label for="item">Select Item:</label>
-              <select id="item" name="item" required>
-                  <option value="">-- Select Item --</option>
-                  <option value="donut">Donut</option>
-                  <option value="minidonut">Mini Donut</option>
-                  <option value="maandazi">Donut Holes</option>
-                  <option value="maandazi">Beignets</option>
-                  <option value="maandazi">Blueberries Muffins</option>
-                  <option value="Brownie">Brownie</option>
-              </select>
-
-              <label for="item">Select Quantity:</label>
-              <select id="quantity" name="quantity" required>
-                  <option value="">-- Select Quantity --</option>
-                  <option value="4">4 pieces</option>
-                  <option value="6">6 pieces</option>
-                  <option value="8">8 pieces</option>
-                  <option value="10">10 pieces</option>
-                  <option value="12">12 pieces</option>
-                  <option value="24">24 pieces</option>
-              </select>
-  
-              <label for="glazing">Select Glazing:</label>
-              <select id="glazing" name="glazing" required>
-                  <option value="">-- Select Glazing --</option>
-                  <option value="none">None</option>
-                  <option value="sugar">Cinnamon Sugar Glaze</option>
-                  <option value="cinnamon">Classic Vanilla Glaze</option>
-                  <option value="chocolate">Chocolate Glaze</option>
-              </select>
-              <label for="filling">Select Filling:</label>
-              <select id="filling" name="filling" required>
-                  <option value="">-- Select Filling --</option>
-                  <option value="none">None</option>
-                  <option value="sprinkles">Chocolate Frosting</option>
-                  <option value="nuts">Oreo Frosting</option>
-                  <option value="caramel">Peanut Butter Frosting</option>
-                  <option value="caramel">Biscoff Frosting</option>
-              </select>
-  
-              <label for="topping">Select Topping:</label>
-              <select id="topping" name="topping" required>
-                  <option value="">-- Select Topping --</option>
-                  <option value="none">None</option>
-                  <option value="sprinkles">Sprinkles</option>
-                  <option value="nuts">Nuts</option>
-                  <option value="caramel">Biscoff</option>
-                  <option value="fruit">Chocolate Shavings</option>
-                  <option value="fruit">Coconut Flakess</option>
-                  <option value="fruit">Oreo</option>
-              </select>
-  
-              <label for="delivery">Select Delivery Option:</label>
-              <select id="delivery" name="delivery" required>
-                  <option value="">-- Select Delivery Option --</option>
-                  <option value="pickup">Self Pick-up</option>
-                  <option value="home_delivery">Delivery at a Fee</option>
-              </select>
-
-              <label for="payment">Order Payment</label>
-              <select id="payment" name="payment" required>
-                <option value="">-- Select Payment Option --</option>
-                <option value="card">Card</option>
-                <option value="cashapp">CashApp</option>
-                <option value="zelle">Zelle</option>
-                <option value="venmo">Venmo</option>
-                <option value="pay_on_delivery">Pay on Delivery/Pick Up</option>
-              </select>
-              
-  
-              <button type="submit" class="btn btn-primary btn-icon">
-                <img src="./assets/images/menu.svg" alt="menu icon">
-                Click to Order
-              </button>              
-          </form>
+            <h2 class="section-title">Your Order Details</h2>
+            <form id="order-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+    
+                <label for="item">Select Item:</label>
+                <select id="item" name="item" required>
+                    <option value="">-- Select Item --</option>
+                    <option value="donut">Donut</option>
+                    <option value="minidonut">Mini Donut</option>
+                    <option value="donut_holes">Donut Holes</option>
+                    <option value="beignets">Beignets</option>
+                    <option value="blueberry_muffins">Blueberry Muffins</option>
+                    <option value="brownie">Brownie</option>
+                </select>
+    
+                <label for="quantity">Select Quantity:</label>
+                <select id="quantity" name="quantity" required>
+                    <option value="">-- Select Quantity --</option>
+                    <option value="4">4 pieces</option>
+                    <option value="6">6 pieces</option>
+                    <option value="8">8 pieces</option>
+                    <option value="10">10 pieces</option>
+                    <option value="12">12 pieces</option>
+                    <option value="24">24 pieces</option>
+                </select>
+    
+                <label for="glazing">Select Glazing:</label>
+                <select id="glazing" name="glazing" required>
+                    <option value="">-- Select Glazing --</option>
+                    <option value="none">None</option>
+                    <option value="sugar">Cinnamon Sugar Glaze</option>
+                    <option value="vanilla">Classic Vanilla Glaze</option>
+                    <option value="chocolate">Chocolate Glaze</option>
+                </select>
+    
+                <label for="filling">Select Filling:</label>
+                <select id="filling" name="filling" required>
+                    <option value="">-- Select Filling --</option>
+                    <option value="none">None</option>
+                    <option value="chocolate_frosting">Chocolate Frosting</option>
+                    <option value="oreo_frosting">Oreo Frosting</option>
+                    <option value="peanut_butter">Peanut Butter Frosting</option>
+                    <option value="biscoff_frosting">Biscoff Frosting</option>
+                </select>
+    
+                <label for="topping">Select Topping:</label>
+                <select id="topping" name="topping" required>
+                    <option value="">-- Select Topping --</option>
+                    <option value="none">None</option>
+                    <option value="sprinkles">Sprinkles</option>
+                    <option value="nuts">Nuts</option>
+                    <option value="biscoff">Biscoff</option>
+                    <option value="chocolate_shavings">Chocolate Shavings</option>
+                    <option value="coconut_flakes">Coconut Flakes</option>
+                    <option value="oreo">Oreo</option>
+                </select>
+    
+                <label for="delivery">Select Delivery Option:</label>
+                <select id="delivery" name="delivery" required>
+                    <option value="">-- Select Delivery Option --</option>
+                    <option value="pickup">Self Pick-up</option>
+                    <option value="home_delivery">Delivery at a Fee</option>
+                </select>
+    
+                <label for="payment">Order Payment:</label>
+                <select id="payment" name="payment" required>
+                    <option value="">-- Select Payment Option --</option>
+                    <option value="card">Card</option>
+                    <option value="cashapp">CashApp</option>
+                    <option value="zelle">Zelle</option>
+                    <option value="venmo">Venmo</option>
+                    <option value="pay_on_delivery">Pay on Delivery/Pick Up</option>
+                </select>
+    
+                <button type="submit" class="btn btn-primary btn-icon">
+                    <img src="./assets/images/menu.svg" alt="menu icon">
+                    Click to Order
+                </button>
+            </form>
         </div>
-      </section>
+    </section>
     </main>
 
 
@@ -272,30 +271,39 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('order-form').addEventListener('submit', function (e) {
-    e.preventDefault(); // Prevent page reload
+    // SheetDB API endpoint (replace with your actual SheetDB endpoint)
+const SHEETDB_URL = 'https://sheetdb.io/api/v1/sgp7jrmbvd4ig';
 
-    const formData = new FormData(e.target);
+document.getElementById('order-form').addEventListener('submit', async function (e) {
+    e.preventDefault(); // Prevent page reload on form submission
+
+    // Capture form data
+    const formData = new FormData(this);
     const data = Object.fromEntries(formData.entries());
 
-    fetch('https://script.google.com/macros/s/AKfycbzpp9lWgae6SXSFZVQd-IW4W8XoVVcSLBiH1r8l0tqPCOcZG_Fvg8m3FF2_nrmFyYNT/exec', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data),
-    })
-      .then(response => response.json())
-      .then(data => {
-        if (data.status === 'success') {
-          alert('Order submitted successfully!');
-          e.target.reset();
+    console.log("Form Data:", data); // Debugging step to view collected data
+
+    try {
+        const response = await fetch(SHEETDB_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ data: data }) // Ensure correct payload format
+        });
+
+        if (response.ok) {
+            alert('Order submitted successfully!');
+            this.reset(); // Reset form on success
         } else {
-          alert('Something went wrong. Please try again.');
+            const errorData = await response.json(); // Read error message
+            console.error('Error Response:', errorData);
+            alert(`Error: ${errorData.error || 'Failed to submit the order'}`);
         }
-      })
-      .catch(error => console.error('Error:', error));
-  });
+    } catch (error) {
+        console.error('Fetch Error:', error);
+        alert('Network error. Please try again.');
+    }
 });
+
   </script>
   
 
