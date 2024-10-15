@@ -245,7 +245,7 @@ html {
   background: hsla(0, 0%, 100%, 0.99);
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.05);
   box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.05);
-  z-index: 1500;
+  z-index: 50;
 }
 
 .navbar-wrapper {
