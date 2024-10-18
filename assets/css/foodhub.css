@@ -938,14 +938,6 @@ html {
   animation: scaleUp 4s ease-in-out infinite;
 }
 
-/* Additional carousel styles (if needed) */
-.carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text visibility */
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-}
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for controls */
@@ -1052,7 +1044,7 @@ html {
 
 /* Individual styling and animation for each event */
 .birthday {
-  color: #FF5733; /* Bright red-orange */
+  color: #da34b0; /* Bright red-orange */
   font-style: italic;
   animation-name: fadeIn; /* Fades in and slides up */
   animation-delay: 0.5s; /* Slight delay for staggered effect */
@@ -1066,21 +1058,21 @@ html {
 }
 
 .wedding {
-  color: #FFC0CB; /* Pink */
+  color: #da34b0; /* Pink */
   text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
   animation-name: fadeIn; /* Fade-in and slide-up effect */
   animation-delay: 1.5s;
 }
 
 .graduation {
-  color: #28A745; /* Green */
+  color: #007BFF; /* Green */
   text-decoration: underline;
   animation-name: fadeIn; /* Fade-in and slide-up effect */
   animation-delay: 2s;
 }
 
 .others {
-  color: #6C757D; /* Gray */
+  color: #000407; /* Gray */
   font-size: 1.5rem;
   letter-spacing: 2px;
   animation-name: fadeIn; /* Fade-in and slide-up effect */
