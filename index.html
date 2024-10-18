@@ -318,6 +318,30 @@
   <!-- Bootstrap JS Links -->
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const testimonials = document.querySelectorAll(".testimonials-card");
+  let current = 0;
+
+  function showNextTestimonial() {
+    // Hide current testimonial with fade-out effect
+    testimonials[current].classList.remove("active", "fade-in");
+
+    // Move to the next testimonial
+    current = (current + 1) % testimonials.length;
+
+    // Show the new testimonial with fade-in effect
+    testimonials[current].classList.add("active", "fade-in");
+  }
+
+  // Initialize the first testimonial with the fade-in effect
+  testimonials[current].classList.add("active", "fade-in");
+
+  // Rotate testimonials every 4 seconds
+  setInterval(showNextTestimonial, 4000);
+});
+
+  </script>
     
 </body>
 

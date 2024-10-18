@@ -779,26 +779,19 @@ html {
   font-weight: 600;
 }
 
-.testimonials-slideshow {
-  position: relative;
-  width: 100%;
-  height: auto;
-  overflow: hidden; /* Hide overflow */
-  margin: auto;
-}
-
 .testimonials-card {
-  display: none; /* Hide all testimonials by default */
-  opacity: 0; /* Initial opacity for fade effect */
-  transition: opacity 0.5s ease-in-out; /* Smooth transition */
+  display: none;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 .testimonials-card.active {
-  display: block; /* Show the active testimonial */
-  opacity: 1; /* Full opacity for the active testimonial */
+  display: block;
 }
 
-
+.fade-in {
+  opacity: 1;
+}
 
 /*-----------------------------------*\ 
   #ORDER FORM

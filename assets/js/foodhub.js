@@ -35,17 +35,3 @@ for (let i = 0; i < navLinks.length; i++) {
     navLinks[i].addEventListener('click', navToggleFunc);
 }
 
-// Testimonial slideshow functionality
-document.addEventListener('DOMContentLoaded', () => {
-    const testimonials = document.querySelectorAll('.testimonials-card');
-    let currentIndex = 0;
-
-    const showTestimonial = () => {
-        testimonials[currentIndex].classList.remove('active');
-        currentIndex = (currentIndex + 1) % testimonials.length; // Loop back to the first testimonial
-        testimonials[currentIndex].classList.add('active');
-    };
-
-    setInterval(showTestimonial, 3000); // Change testimonial every 3 seconds
-});
-
