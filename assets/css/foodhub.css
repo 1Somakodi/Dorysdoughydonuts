@@ -888,7 +888,7 @@ html {
 .carousel {
   max-width: 100%;
   margin: auto;
-  height: 90vh; /* Set the height of the carousel to 90% of the viewport height */
+  height: 90vh; /* Keep this for larger screens */
   overflow: hidden; /* Prevent overflow */
   position: relative; /* Required for absolute positioning of controls */
 }
@@ -901,6 +901,20 @@ html {
   }
 }
 
+/* Styles for smaller screens */
+@media (max-width: 576px) {
+  .carousel {
+    height: auto; /* Allow height to be automatic on smaller screens */
+    min-height: 50vh; /* Set a minimum height for the carousel */
+    padding: 0; /* Remove any padding if necessary */
+  }
+
+  #carousel-section {
+    padding: 0; /* Ensure no extra padding */
+    margin: 0; /* Ensure no extra margins */
+  }
+}
+
 /* Ensure carousel images cover the area without stretching */
 .carousel-inner img {
   width: 100%;
@@ -908,7 +922,6 @@ html {
   object-fit: cover; /* Ensures images cover the area without stretching */
   animation: scaleUp 4s ease-in-out infinite;
 }
-
 
 
 /* footer */
