@@ -128,12 +128,12 @@
                 <label for="item">Select Item:</label>
                 <select id="item" name="item" required>
                     <option value="">-- Select Item --</option>
-                    <option value="donut">Donut</option>
-                    <option value="minidonut">Mini Donut</option>
-                    <option value="donut_holes">Donut Holes</option>
-                    <option value="beignets">African Donuts</option>
-                    <option value="blueberry_muffins">Blueberry Muffins</option>
-                    <option value="brownie">Brownie</option>
+                    <option value="donut" data-price="4">Donut</option>
+                    <option value="minidonut" data-price="2.5">Mini Donut</option>
+                    <option value="donut_holes" data-price="3">Donut Holes</option>
+                    <option value="beignets" data-price="1">African Donuts</option>
+                    <option value="blueberry_muffins" data-price="3">Blueberry Muffins</option>
+                    <option value="brownie" data-price="5">Brownie</option>
                 </select>
     
                 <label for="quantity">Select Quantity:</label>
@@ -183,8 +183,8 @@
                 <label for="delivery">Select Delivery Option:</label>
                 <select id="delivery" name="delivery" required>
                     <option value="">-- Select Delivery Option --</option>
-                    <option value="pickup">Self Pick-up</option>
-                    <option value="home_delivery">Delivery at a Fee</option>
+                    <option value="pickup" data-fee="0">Self Pick-up</option>
+                    <option value="home_delivery" data-fee="5">Delivery at a Fee - $5</option>
                 </select>
     
                 <label for="payment">Order Payment:</label>
@@ -197,9 +197,14 @@
                 </select>
     
                 <label for="order-description">Additional Order Instructions (Optional):</label>
-                <textarea id="order-description" name="order_description" 
-                          rows="5" placeholder="Enter any additional details about your order..."
+                <textarea id="order-description" name="order_description" rows="5"
+                          placeholder="Enter any additional details about your order..."
                           style="width: 100%; resize: none; font-size: 16px; padding: 10px; box-sizing: border-box;"></textarea>
+    
+                <!-- Total Amount Display -->
+                <div style="margin-top: 15px; font-size: 18px;">
+                    <strong>Total Amount: $<span id="total-amount">0.00</span></strong>
+                </div>
     
                 <button type="submit" class="btn btn-primary btn-icon" style="margin-top: 15px;">
                     <img src="./assets/images/menu.svg" alt="menu icon">
@@ -333,6 +338,29 @@ document.getElementById('order-form').addEventListener('submit', async function 
           glazingSelect.value = '';
       }
   });
+</script>
+
+<script>
+  // Get elements for calculation
+  const itemSelect = document.getElementById('item');
+  const quantitySelect = document.getElementById('quantity');
+  const deliverySelect = document.getElementById('delivery');
+  const totalAmountDisplay = document.getElementById('total-amount');
+
+  // Update total amount on change of item, quantity, or delivery
+  function updateTotalAmount() {
+      const itemPrice = parseFloat(itemSelect.selectedOptions[0].getAttribute('data-price')) || 0;
+      const quantity = parseInt(quantitySelect.value) || 0;
+      const deliveryFee = parseFloat(deliverySelect.selectedOptions[0].getAttribute('data-fee')) || 0;
+
+      const total = (itemPrice * quantity) + deliveryFee;
+      totalAmountDisplay.textContent = total.toFixed(2);
+  }
+
+  // Add event listeners to update total amount
+  itemSelect.addEventListener('change', updateTotalAmount);
+  quantitySelect.addEventListener('change', updateTotalAmount);
+  deliverySelect.addEventListener('change', updateTotalAmount);
 </script>
   
 
